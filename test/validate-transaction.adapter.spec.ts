@@ -49,7 +49,7 @@ describe('ValidateTransactionAdapter', () => {
     invalidDto.transactionExternalId = '123';
     invalidDto.accountExternalIdDebit = 'abc';
     invalidDto.accountExternalIdCredit = 'def';
-    invalidDto.tranferenceTypeId = -1;
+    invalidDto.transferenceTypeId = -1;
     invalidDto.value = -100;
     invalidDto.createdAt = new Date('not a date');
 
@@ -64,7 +64,7 @@ describe('ValidateTransactionAdapter', () => {
     validDto.transactionExternalId = '123e4567-e89b-12d3-a456-426614174000';
     validDto.accountExternalIdDebit = '123e4567-e89b-12d3-a456-426614174000';
     validDto.accountExternalIdCredit = '123e4567-e89b-12d3-a456-426614174000';
-    validDto.tranferenceTypeId = 1;
+    validDto.transferenceTypeId = 1;
     validDto.value = 1000;
     validDto.createdAt = new Date();
 

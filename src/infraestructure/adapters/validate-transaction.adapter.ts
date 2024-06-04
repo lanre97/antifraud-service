@@ -29,7 +29,7 @@ export class ValidateTransactionAdapter {
     transaction: ValidateTransactionDto,
   ): TransactionModel {
     return {
-      transferenceTypeId: transaction.tranferenceTypeId,
+      transferenceTypeId: transaction.transferenceTypeId,
       value: transaction.value,
       transactionExternalId: transaction.transactionExternalId,
       accountExternalIdCredit: transaction.accountExternalIdCredit,

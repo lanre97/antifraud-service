@@ -10,7 +10,7 @@ export class ValidateTransactionDto {
   accountExternalIdCredit: string;
   @IsNumber()
   @Type(() => Number)
-  tranferenceTypeId: number;
+  transferenceTypeId: number;
   @IsNumber()
   @Type(() => Number)
   value: number;
