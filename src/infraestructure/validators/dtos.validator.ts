@@ -13,11 +13,9 @@ export class DtoValidator<T extends object> implements Validator<T> {
 
   public async validate(object: T): Promise<boolean> {
     try {
-      console.log('object', object);
       const instance = plainToInstance(this.type, object, {
         enableImplicitConversion: true,
       });
-      console.log('instance', instance);
       await validateOrReject(instance);
       return true;
     } catch (error) {
